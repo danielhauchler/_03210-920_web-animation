@@ -1,0 +1,44 @@
+#slider {
+  position: relative;
+  width: 960px;
+  height: 350px;
+  margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+  background-color: grey;
+}
+
+#controls {
+  /* opacity: 0; */
+}
+
+#controls div {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: .6s;
+}
+
+#prev {
+  left: 0;
+  background-image: url("images/btn_arrow.png");
+  background-size: 20px 20px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+#prev:hover {
+  background-image: url("images/btn_arrowOver.png");
+}
+
+#next {
+  right: 0;
+  background-image: url("images/btn_arrow.png");
+  background-size: 20px 20px;
+  transform: translateY(-50%);
+}
+
+#next:hover {
+  background-image: url("images/btn_arrowOver.png");
+}
